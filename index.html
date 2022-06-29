@@ -20,15 +20,68 @@
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem iste consectetur accusantium nisi numquam facere officiis laborum quas nam delectus. Quisquam fugiat maiores sed! Neque illum necessitatibus sed laboriosam voluptates?</p>
         </div>
       </div>
-    </div>
     <div class="media-icons">
       <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
       <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
       <a href="#" class="icon"><i class="fa-brands fa-instagram-square"></i></a>
       <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
     </div>
+  </div>
+  </section>
+
+  <section class="sec-02">
+    <div class="container">
+      <h3 class="section-title">Scroll Reveal Tutorial</h3>
+      <div class="content">
+        <div class="image">
+          <img src="./images/img2.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="info-title">Description</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam molestias magni, laborum, nostrum quas quia adipisci, cumque repellat porro iure soluta est provident recusandae expedita?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-03">
+    <div class="container">
+      <h3 class="section-title">Scroll Reveal Tutorial</h3>
+      <div class="content">
+        <div class="media-info">
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+          </li>
+        </div>
+        <div class="image">
+          <img src="./images/img3.jpg" alt="">
+        </div>
+      </div>
+    </div>
   </section>
 
   <script src="https://kit.fontawesome.com/62c69daf43.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true, distance:"60px", duration: 2000, dilay:200, });
+    ScrollReveal().reveal('.main-title, .section-title', { delay: 200,origin:"left" });
+    ScrollReveal().reveal('.sec-01 .image', { delay: 600,origin:"left" });
+    ScrollReveal().reveal('.text-box, .sec-02 .info', { delay: 700,origin:"right" });
+    ScrollReveal().reveal('.media-icons i', { delay: 500,origin:"bottom", interval: 200 ,});
+    ScrollReveal().reveal('.media-info li', { delay: 500,origin:"left", interval: 200 ,});
+    ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500,origin:"top",});
+</script>
 </body>
 </html>
